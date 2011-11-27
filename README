@@ -1,1 +1,15 @@
-Projeto de teste, para brincar no GitHub.
+Connnect 4
+Autor: Carlos Eduardo Saraiva.
+27/11/2011
+  
+Esse projeto é baseado no jogo Connect4, usando matrizes de botões, o WindowBuilder e classes específicas para desenvolvimento de um ambiente gráfico em java. Foi um projeto proposto pelo professor de Programação estruturada modular.
+Tentei fazer usando o paradigma de programação a qual estou acostumado mesmo porque não sei nada de orientação a objetos. Todos os métodos criados foi pensando em funções e procedimentos na programação estruturada modular. Também usei variáveis em ingles, para treinar a lingua e com a intenção de tornar algo legível para qualquer pessoa de qualquer outro idioma.Também disponilizei o projeto no GitHub: https://github.com/CarlosSaraiva/Connect4 , para quem sabe no futuro ampliar mas intenção agora é entender como funciona o esquema do 'git'.
+
+Há alguns bugs que não consegui solucionar, mas o mais crítico é a qual o programa em algumas vezes não reconhece um jogador quando este fez uma diagonal. Pensei em um algoritimo recursivo, para detectar as diagonais e na maioria das
+vezes funciona. Só não consegui identificar porque as vezes o programa passa batido em certos casos. Mas suspeito que 
+não são os metodos para diagonais em si, e sim em relação ao método 'verifyWinner'. 
+
+Não tive muito tmepo de comentar o código, mas as principais partes deixei em destaque.Talvez detalhe melhor depois.
+ 
+Por enquanto é isto. Divirta-se. (=
+ 
