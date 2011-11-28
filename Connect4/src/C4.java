@@ -1,26 +1,26 @@
 /*
  * Autor: Carlos Eduardo Saraiva.
  * 
- * Esse projeto é baseado no jogo Connect4, usando matrizes de botões, o WindowBuilder e classes específicas para
- * desenvolvimento de um ambiente gráfico em java. Foi um projeto proposto pelo professor de Programação estruturada modular.
- * Tentei fazer usando o paradigma de programação a qual estou acos-
+ * Esse projeto ï¿½ baseado no jogo Connect4, usando matrizes de botï¿½es, o WindowBuilder e classes especï¿½ficas para
+ * desenvolvimento de um ambiente grï¿½fico em java. Foi um projeto proposto pelo professor de Programaï¿½ï¿½o estruturada modular.
+ * Tentei fazer usando o paradigma de programaï¿½ï¿½o a qual estou acos-
  * 
  * 
- * tumado mesmo porque não sei nada de orientação a objetos. Todos os métodos criados foi pensando em funções e pro-
- * cedimentos na programação estruturada modular. Também usei variáveis em ingles, para treinar a lingua e com a inten
- * ção de tornar algo legível para qualquer pessoa de qualquer outro idioma.
+ * tumado mesmo porque nï¿½o sei nada de orientaï¿½ï¿½o a objetos. Todos os mï¿½todos criados foi pensando em funï¿½ï¿½es e pro-
+ * cedimentos na programaï¿½ï¿½o estruturada modular. Tambï¿½m usei variï¿½veis em ingles, para treinar a lingua e com a inten
+ * ï¿½ï¿½o de tornar algo legï¿½vel para qualquer pessoa de qualquer outro idioma.
  * 
- * Também disponilizei o projeto no GitHub: https://github.com/CarlosSaraiva/Connect4 , para quem sabe no futuro
- * ampliar mas intenção agora é entender como funciona o esquema do 'git'.
+ * Tambï¿½m disponilizei o projeto no GitHub: https://github.com/CarlosSaraiva/Connect4 , para quem sabe no futuro
+ * ampliar mas intenï¿½ï¿½o agora ï¿½ entender como funciona o esquema do 'git'.
  * 
- * Há alguns bugs que não consegui solucionar, mas o mais crítico é a qual o programa em algumas vezes não reconhece
+ * Hï¿½ alguns bugs que nï¿½o consegui solucionar, mas o mais crï¿½tico ï¿½ a qual o programa em algumas vezes nï¿½o reconhece
  * um jogador quando este fez uma diagonal. Pensei em um algoritimo recursivo, para detectar as diagonais e na maioria das
- * vezes funciona. Só não consegui identificar porque as vezes o programa passa batido em certos casos. Mas suspeito que 
- * não são os metodos para diagonais em si, e sim em relação ao método 'verifyWinner'. 
+ * vezes funciona. Sï¿½ nï¿½o consegui identificar porque as vezes o programa passa batido em certos casos. Mas suspeito que 
+ * nï¿½o sï¿½o os metodos para diagonais em si, e sim em relaï¿½ï¿½o ao mï¿½todo 'verifyWinner'. 
  * 
- * Não tive muito tmepo de comentar o código, mas as principais partes deixei em destaque.
+ * Nï¿½o tive muito tmepo de comentar o cï¿½digo, mas as principais partes deixei em destaque.
  * 
- * Por enquanto é isto. Divirta-se. (=
+ * Por enquanto ï¿½ isto. Divirta-se. (=
  
  */
 
@@ -100,7 +100,7 @@ public class C4  extends JFrame implements ActionListener{
 	private void initialize() {
 		frame = new JFrame();
 		frame.setResizable(false);
-		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("C4ICO.jpg"));
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("img/C4ICO.jpg"));
 		
 		frame.setBounds(100, 100, 461, 401);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -167,7 +167,7 @@ public class C4  extends JFrame implements ActionListener{
 	{
 		
 		Player = 1;
-		lblStatus.setText("                                                                                                                   Player 1 turn");
+		lblStatus.setText("Player 1 turn");
 		verDrawn = 0;
 		
 		for (int i = 0; i < arrayState.length;i++)
@@ -213,7 +213,7 @@ public class C4  extends JFrame implements ActionListener{
 		if (winner == true)
 		{
 			JOptionPane.showMessageDialog(null,"Player " + Player + " wins");
-			lblStatus.setText("                                                                                                                   Player "  + Integer.toString(Player) + " wins!");
+			lblStatus.setText("Player "  + Integer.toString(Player) + " wins!");
 			gameStart();
 			
 		}	
@@ -227,7 +227,7 @@ public class C4  extends JFrame implements ActionListener{
 		if (playerStored == true)
 		{
 			Player = setPlayer(Player);
-			lblStatus.setText("                                                                                                                   Player "  + Integer.toString(Player) + " turn");
+			lblStatus.setText("Player "  + Integer.toString(Player) + " turn");
 			
 		}
 
