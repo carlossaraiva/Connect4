@@ -206,30 +206,29 @@ public class C4  extends JFrame implements ActionListener{
 		int diagInvDownChecked = diagInvScanDown(linFound, colFound, 0, Player);
 		
 		boolean winner = verifyWinner(lineChecked, colUpChecked,colDownChecked,diagUpChecked,diagDownChecked, diagInvUpChecked,diagInvDownChecked,  Player);
-		
 
-		
 		verDrawn = verDrawn + 1;
+		
+		if (verDrawn == 49 && winner == false)
+		{
+			lblStatus.setText("Drawn!");
+		}
+		
+		
 		if (winner == true)
 		{
 			JOptionPane.showMessageDialog(null,"Player " + Player + " wins");
 			lblStatus.setText("Player "  + Integer.toString(Player) + " wins!");
 			gameStart();
-			
+
 		}	
 
-		
-		if (verDrawn == 49 && winner == false)
-		{
-			lblStatus.setText("                                                                                                                   Drawn!");
-		}
-		
-		if (playerStored == true)
-		{
-			Player = setPlayer(Player);
-			lblStatus.setText("Player "  + Integer.toString(Player) + " turn");
-			
-		}
+			else if (playerStored == true)
+			{
+				Player = setPlayer(Player);
+				lblStatus.setText("Player "  + Integer.toString(Player) + " turn");
+	
+			}
 
 		
 		
